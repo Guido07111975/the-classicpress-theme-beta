@@ -8,7 +8,7 @@ The ClassicPress Theme is the default ClassicPress theme and is based on the the
 Please note that using the theme as-is or as a parent theme will mean that the theme may be updated from time to time alongside a ClassicPress update. This will not happen if you use it as a starter theme and re-name it as indicated above.
 
 ## Special Features
-The ClassicPress Theme comes with one accessible menu. It automatically becomes a mobile menu with a search box on narrow screens.
+The ClassicPress Theme comes with one accessible menu. It automatically becomes a mobile menu on narrow screens.
 
 The theme enables widgets to be added to a right sidebar, while specifying one sidebar for posts (the Blog Sidebar) and another for pages (the Main Sidebar).
 
