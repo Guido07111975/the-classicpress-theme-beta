@@ -82,21 +82,21 @@
 	</header>
 
 	<?php
-	// Header image
+	// Homepage hero
 	if ( is_front_page() ) {
 		if ( get_header_image() || is_active_sidebar( 'hero' ) ) {
 		?>
 		<div class="home-hero">
 			<div class="inner-home-hero">
 				<?php
-				if ( get_header_image() ) { 
+				if ( get_header_image() ) {
 				?>
 				<div class="home-hero-image">
 					<img src="<?php echo get_header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				</div>
 				<?php
 				}
-				?>				
+				?>
 				<?php
 				if ( is_active_sidebar( 'hero' ) ) {
 				?>
