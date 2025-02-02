@@ -8,12 +8,12 @@ The ClassicPress Theme is the default ClassicPress theme and is based on the the
 Please note that using the theme as-is or as a parent theme will mean that the theme may be updated from time to time alongside a ClassicPress update. This will not happen if you use it as a starter theme and re-name it as indicated above.
 
 ## Special Features
-The ClassicPress Theme comes with one accessible menu. t automatically becomes a mobile menu on narrow screens.
+The ClassicPress Theme comes with one accessible menu. It automatically becomes a mobile menu on narrow screens.
 
 The theme enables widgets to be added to a right sidebar, while specifying one sidebar for posts (the Blog Sidebar) and another for pages (the Main Sidebar).
 
-The theme also enables widgets to be added to the hompepage hero section and the footer.
+The theme also enables widgets to be added to the homepage hero section and the footer.
 
-The hompepage hero section makes it possible to display a custom header image as well. You can set this custom header image in the Customizer.
+The homepage hero section makes it possible to display a custom header image as well, that can be set in the Customizer.
 
 The ClassicPress Theme also comes with a ready-made template for Frequently Asked Questions. To make use of this, create a custom post type for FAQs, register the post type as 'faq', and specify a URL for its archive (e.g. 'has_archive' => 'faqs' ). The theme will then display your FAQs using accessible disclosure widgets. Just remember to create a Custom Link to the FAQs in your menu!
