@@ -30,6 +30,7 @@ Normalizing styles have been helped along thanks to the fine work of Nicolas Gal
 # Alignments
 # Clearings
 # Content
+	## Posts and pages
 	## Comments
 # Media
 	## Captions
@@ -479,6 +480,7 @@ pre {
 	white-space: pre-wrap;
 	margin: 0 0 1em;
 	padding: 1em;
+	border-radius: 3px;
 }
 
 code, kbd, tt, var {
@@ -487,10 +489,9 @@ code, kbd, tt, var {
 }
 
 code {
-	display: block;
 	background: #eee;
-	margin:0 0 1em;	
-	padding: 1em;
+	padding: 0 0.5em;	
+	border-radius: 3px;
 }
 
 abbr, acronym {
@@ -819,6 +820,18 @@ button a:hover {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+/* Required class in Theme Test plugin. */
+
+.updated:not(.published) {
+	display: none;
+}
 
 /*--------------------------------------------------------------
 ## Comments
@@ -1346,7 +1359,7 @@ article a[target='_blank']::after {
 	margin-top: 0.5em;
 	padding: 0.5em 1em;
 	background: rgb(235 243 246 / 46%);
-	border-radius: 6px;
+	border-radius: 3px;
 }
 
 /*--------------------------------------------------------------
