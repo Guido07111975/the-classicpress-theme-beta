@@ -1339,11 +1339,13 @@ article a[target='_blank']::after {
 	width: calc(100% - 100px);
 }
 
-.error404 h2.widget-title {
-	padding: 0.5em 0 0;
+.error404 .page-content h2.widget-title {
+	margin: 0;
+	padding: 0.5em 0;
 	font-size: 1.5em;
 	color: #040402;
 }
+/* Widgets at 404 page */
 
 /*--------------------------------------------------------------
 ## FAQ CPT support

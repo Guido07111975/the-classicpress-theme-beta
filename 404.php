@@ -18,12 +18,12 @@ get_header();
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'the-classicpress-theme' ); ?></p>
 
 					<?php
-					get_search_form();
-
 					$widget_title_args = array(
 						'before_title' => '<h2 class="widget-title">',
 						'after_title' => '</h2>'
 					);
+
+					the_widget( 'WP_Widget_Search', array(), $widget_title_args );
 
 					the_widget( 'WP_Widget_Recent_Posts', array(), $widget_title_args );
 					?>
