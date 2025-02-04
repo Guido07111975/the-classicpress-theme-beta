@@ -25,7 +25,7 @@ if ( is_active_sidebar( 'footer' ) ) {
 }
 ?>
 
-<footer id="legal">
+<footer id="legal" role="contentinfo">
 	<div class="inner-legal">
 		<div class="copyright">
 			<p><?php _e('Copyright', 'the-classicpress-theme'); ?> <?php echo date('Y'); ?>  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></p>
