@@ -34,6 +34,16 @@ function susty_wp_body_classes( $classes ) {
 add_filter( 'body_class', 'susty_wp_body_classes' );
 
 /**
+ * Add a pingback url auto-discovery header for single posts, pages, or attachments.
+ */
+function susty_wp_pingback_header() {
+	if ( is_singular() && pings_open() ) {
+		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
+	}
+}
+add_action( 'wp_head', 'susty_wp_pingback_header' );
+
+/**
  * Add excerpts to pages
  */
 add_post_type_support( 'page', 'excerpt' );
