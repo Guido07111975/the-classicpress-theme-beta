@@ -827,7 +827,7 @@ button a:hover {
 .sticky {
 	display: block;
 }
-/* Required class in Theme Test plugin. */
+/* Required class in Theme Check plugin. */
 
 .updated:not(.published) {
 	display: none;
@@ -864,7 +864,7 @@ ol.comment-list, ol.comment-list .children {
 .bypostauthor {
 	display: block;
 }
-/* Required class in Theme Test plugin. */
+/* Required class in Theme Check plugin. */
 
 #respond {
 	padding:1em 0 0;
