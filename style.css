@@ -1117,6 +1117,7 @@ svg * {
 .logged-in #menu-toggle-close {
 	top: 5em;
 }
+/* WP admin bar active: fix menu button position */
 
 /*--------------------------------------------------------------
 ## Home hero
@@ -1516,15 +1517,19 @@ article a[target='_blank']::after {
 		box-shadow: none;
 		border-radius: 0;
 	}
-	
+
 	.inner-home-hero {
 		display: block;
-		padding-bottom: 0;
+		padding-bottom: 1em;
+		text-align: center;
 	}
 
-	.home-hero-image,
-	.home-hero-intro {
+	.home-hero-image {
 		padding-bottom: 2em;
+	}
+
+	.home-hero-intro {
+		padding-bottom: 1em;
 	}
 
 	#content {
