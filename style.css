@@ -803,7 +803,9 @@ button a:hover {
 .page-content::before,
 .page-content::after,
 .comment-content::before,
-.comment-content::after {
+.comment-content::after,
+.widget-container::before,
+.widget-container::after {
 	content: "";
 	display: table;
 	table-layout: fixed;
@@ -813,7 +815,8 @@ button a:hover {
 .entry-content::after,
 .post-content::after,
 .page-content::after,
-.comment-content::after {
+.comment-content::after,
+.widget-container::after {
 	clear: both;
 }
 
@@ -1320,6 +1323,10 @@ article a[target='_blank']::after {
 	margin: 0 0 2em;
 }
 
+.widget-container:last-child {
+	margin-bottom:0;
+}
+
 .widget-container ul {
 	list-style-type: none;
 }
@@ -1546,13 +1553,13 @@ article a[target='_blank']::after {
 	}
 
 	#sidebar {
-		padding-bottom: 1em;
+		padding-bottom: 2em;
 	}
 
 	.inner-colophon {
 		display: block;
 		padding-top: 2em;
-		padding-bottom: 1.5em;
+		padding-bottom: 2em;
 	}
 
 	.inner-legal {
