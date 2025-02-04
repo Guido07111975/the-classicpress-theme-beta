@@ -29,7 +29,7 @@ if ( ! function_exists( 'susty_setup' ) ) :
 
 		/**
 		 * Add default posts and comments RSS feed links to head.
-		 */			
+		 */	
 		add_theme_support( 'automatic-feed-links' );
 
 		/*
@@ -49,7 +49,7 @@ if ( ! function_exists( 'susty_setup' ) ) :
 
 		/**
 		 * This theme uses wp_nav_menu() in one location.
-		 */		
+		 */
 		register_nav_menus(
 			array(
 				'main-menu'   => esc_html__( 'Main Menu', 'the-classicpress-theme' ),
@@ -60,7 +60,7 @@ if ( ! function_exists( 'susty_setup' ) ) :
 		 * Add support for core custom background.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/custom-backgrounds/
-		 */		
+		 */
 		add_theme_support(
 			'custom-background',
 			apply_filters(
@@ -71,6 +71,11 @@ if ( ! function_exists( 'susty_setup' ) ) :
 				)
 			)
 		);
+
+		/**
+		 * Add support for selective refresh for widgets.
+		 */
+		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		/**
 		 * Add support for core custom logo.
@@ -91,7 +96,7 @@ if ( ! function_exists( 'susty_setup' ) ) :
 		 * Add support for core custom header.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/custom-headers/
-		 */		
+		 */
 		add_theme_support(
 			'custom-header',
 			array(
@@ -116,7 +121,7 @@ if ( ! function_exists( 'susty_setup' ) ) :
 		 * Add support for core editor style.
 		 *
 		 * @link https://codex.wordpress.org/Editor_Style
-		 */	
+		 */
 		add_theme_support( 'editor-styles' );
 		add_editor_style( 'css/editor-style.css' );
 	}
