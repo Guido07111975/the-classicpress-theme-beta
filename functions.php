@@ -25,7 +25,7 @@ if ( ! function_exists( 'susty_setup' ) ) :
 		 */
 		global $content_width;
 		if ( ! isset( $content_width ) )
-		$content_width = 790;
+		$content_width = 850;
 
 		/**
 		 * Add default posts and comments RSS feed links to head.
