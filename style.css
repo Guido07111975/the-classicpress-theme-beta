@@ -1107,12 +1107,12 @@ svg * {
 
 #menu-toggle,
 #menu-toggle-close {
-    display: none;
+	display: none;
 	position:absolute;
 	top: 2em;
-    right: 1em;
-    padding: 0.2em;
-    background: #fff;
+	right: 1em;
+	padding: 0.2em;
+	background: #fff;
 	line-height: 1;
 }
 
@@ -1126,23 +1126,23 @@ svg * {
 ## Home hero
 --------------------------------------------------------------*/
 .home-hero {
-    background-image: linear-gradient(-135deg,#3ebca6 0,#057f99 50%,#006b81 100%);
-    background-size: auto;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-color: #0f0;
-	border-bottom: 15px solid #692478
+	background-image: linear-gradient(-135deg,#3ebca6 0,#057f99 50%,#006b81 100%);
+	background-size: auto;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: #0f0;
+	border-bottom: 15px solid #692478;
 }
 
 .inner-home-hero {
 	width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 3em 1rem;
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 3em 1rem;
 	display: flex;
 	justify-content: space-between;
 	gap: 2rem;
-	color: #fff;	
+	color: #fff;
 }
 
 .inner-home-hero .home-hero-image {
