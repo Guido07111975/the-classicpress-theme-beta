@@ -49,7 +49,7 @@
 			<?php
 			// Menu
 			?>
-			<nav id="site-navigation" class="main-navigation nav--toggle-sub nav--toggle-small" aria-label="<?php esc_attr_e( 'Main menu', 'the-classicpress-theme' ); ?>">
+			<nav id="site-navigation" class="main-navigation nav--toggle-sub nav--toggle-small" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'the-classicpress-theme' ); ?>">
 				<?php
 				wp_nav_menu(
 					array(
