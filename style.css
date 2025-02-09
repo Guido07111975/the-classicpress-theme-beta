@@ -977,7 +977,7 @@ svg * {
 	padding: 0 1rem;
 	display: flex;
 	justify-content: space-between;
-	gap: 2em;
+	gap: 2rem;
 	align-items: center;
 }
 
@@ -1141,16 +1141,20 @@ svg * {
     padding: 3em 1rem;
 	display: flex;
 	justify-content: space-between;
-	gap: 2em;
+	gap: 2rem;
 	color: #fff;	
 }
 
 .inner-home-hero .home-hero-image {
 	flex-basis: 40rem;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
 .inner-home-hero .home-hero-intro {
-	flex-basis: 30rem;
+	flex-basis: 31rem;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
 .inner-home-hero h3.widget-title {
@@ -1198,20 +1202,20 @@ h1.page-title {
 #primary {
 	display: flex;
 	justify-content: space-between;
-	gap: 4em;	
+	gap: 2rem;	
 }
 
 #main {
 	min-height: 300px;
+	flex-basis: 75%;
 	flex-grow: 1;
 	flex-shrink: 1;
-	flex-basis: 75%;	
 }
 
 #sidebar {
+	flex-basis: 25%;
 	flex-grow: 1;
 	flex-shrink: 1;
-	flex-basis: 25%;	
 }
 
 /* Page content list */
@@ -1290,14 +1294,14 @@ article a[target='_blank']::after {
 	padding: 1em 0;
 	display: flex;
 	justify-content: space-between;
-	gap: 2em;
+	gap: 2rem;
 }
 
 .nav-previous,
 .nav-next {
+  flex-basis: 50%;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 50%;
 }
 
 .nav-next {
@@ -1388,13 +1392,13 @@ article a[target='_blank']::after {
 	padding: 3em 1rem;
 	display: flex;
 	justify-content: space-between;
-	gap: 2em;
+	gap: 2rem;
 }
 
 .inner-colophon .widget-container {
+  flex-basis: 100%;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 100%;	
 }
 
 #colophon h3.widget-title {
@@ -1423,7 +1427,7 @@ article a[target='_blank']::after {
 	padding: 1.5em 1rem;
 	display: flex;
 	justify-content: space-between;
-	gap: 2em;
+	gap: 2rem;
 	font-size: 0.9em;
 }
 
@@ -1443,9 +1447,9 @@ article a[target='_blank']::after {
 
 .copyright,
 .policy {
+  flex-basis: 50%;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 50%;
 }
 
 .policy {
