@@ -84,21 +84,21 @@
 		<div class="home-hero">
 			<div class="inner-home-hero">
 				<?php
-				if ( get_header_image() ) {
-				?>
-				<div class="home-hero-image">
-					<img src="<?php echo get_header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-				</div>
-				<?php
-				}
-				?>		
-				<?php
 				if ( is_active_sidebar( 'hero' ) ) {
 				?>
 				<div class="home-hero-intro" role="complementary">
 					<?php
 					dynamic_sidebar( 'hero' );
 					?>
+				</div>
+				<?php
+				}
+				?>
+				<?php
+				if ( get_header_image() ) {
+				?>
+				<div class="home-hero-image">
+					<img src="<?php echo get_header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				</div>
 				<?php
 				}
