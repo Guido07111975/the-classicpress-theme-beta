@@ -151,7 +151,7 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 /**
- * Add widgets to sidebar and footer
+ * Add widgets to hero, sidebar and footer
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/
  */
