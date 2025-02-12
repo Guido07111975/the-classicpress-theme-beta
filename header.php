@@ -86,7 +86,7 @@
 				<?php
 				if ( is_active_sidebar( 'hero' ) ) {
 				?>
-				<div class="home-hero-intro" role="complementary">
+				<div class="home-hero-text" role="complementary">
 					<?php
 					dynamic_sidebar( 'hero' );
 					?>
