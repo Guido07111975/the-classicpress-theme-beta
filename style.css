@@ -1151,7 +1151,7 @@ svg * {
 	flex-shrink: 1;
 }
 
-.inner-home-hero .home-hero-intro {
+.inner-home-hero .home-hero-text {
 	flex-basis: 31rem;
 	flex-grow: 1;
 	flex-shrink: 1;
@@ -1541,7 +1541,7 @@ article a[target='_blank']::after {
 		padding-bottom: 2em;
 	}
 
-	.home-hero-intro {
+	.home-hero-text {
 		padding-bottom: 1em;
 	}
 
