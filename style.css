@@ -664,13 +664,13 @@ textarea:focus {
 }
 
 input[type="checkbox"] {
-	-webkit-appearance:checkbox;
-	-moz-appearance:checkbox;
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
 }
 
 input[type="radio"] {
-	-webkit-appearance:radio;
-	-moz-appearance:radio;
+	-webkit-appearance: radio;
+	-moz-appearance: radio;
 }
 
 textarea {
@@ -678,9 +678,9 @@ textarea {
 }
 
 select {
-	-webkit-appearance:menulist;
-	-moz-appearance:menulist;
-	max-width:100%;
+	-webkit-appearance: menulist;
+	-moz-appearance: menulist;
+	max-width: 100%;
 }
 
 input[type="search"] {
@@ -1560,6 +1560,10 @@ article a[target='_blank']::after {
 
 	#sidebar {
 		padding-bottom: 2em;
+	}
+
+	.widget-container input[type="search"] {
+		width: auto;
 	}
 
 	.inner-colophon {
