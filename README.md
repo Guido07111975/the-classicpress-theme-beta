@@ -27,7 +27,7 @@ The ClassicPress Theme also comes with a ready-made template for Frequently Aske
 * Fully updated stylesheet
 * Many minor changes in code
 * To improve the HTML-structure, a few IDs and CSS-classes have been changed (mostly in files header.php and footer.php)
-* Users with custom theme styling, may have to update their custom CSS
+* Users with custom theme styling, may have to update this
 
 = Version 1.0.0
 * Initial release
