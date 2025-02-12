@@ -145,13 +145,13 @@ function susty_scripts() {
 add_action( 'wp_enqueue_scripts', 'susty_scripts' );
 
 /**
- * Remove emoji styles
+ * Remove emoji styles.
  */
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 /**
- * Add widgets to hero, sidebar and footer
+ * Add widgets to hero, sidebar and footer.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/
  */
