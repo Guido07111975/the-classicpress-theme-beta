@@ -26,10 +26,7 @@ The ClassicPress Theme also comes with a ready-made template for Frequently Aske
 * Removed: footer menu and static footer content
 * Fully updated stylesheet
 * Many minor changes in code
-
-Note for users with custom theme styling:
-
-A few CSS-classes in header.php and footer.php have been changed.
+* To improve the HTML-structure, a few IDs and CSS-classes have been changed (mostly in files header.php and footer.php)
 
 = Version 1.0.0
 * Initial release
