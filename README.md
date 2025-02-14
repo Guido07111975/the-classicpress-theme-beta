@@ -21,13 +21,14 @@ The ClassicPress Theme also comes with a ready-made template for Frequently Aske
 ## Changelog
 = Version 2.0.0
 * Major update
-* New: homepage hero section
-* New: footer widget section
-* Removed: footer menu and static footer content
+* New: homepage hero section (header image and widget area)
+* New: footer widget area
+* Removed: hardcoded custom font (in favour of system font)
+* Removed: footer menu and static CP-specific footer content
+* File footer.php: added CSS-classes that will replace CP-specific ones in the future ('classic', 'cplegal', 'cpcopyright', 'cppolicy')
+* Users with custom footer styling should consider updating their CSS in advance
 * Fully updated stylesheet
 * Many minor changes in code
-* To improve the HTML-structure, a few IDs and CSS-classes have been changed (mostly in files header.php and footer.php)
-* Users with custom theme styling may have to update this
 
 = Version 1.0.0
 * Initial release

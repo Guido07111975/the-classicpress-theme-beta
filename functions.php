@@ -185,7 +185,7 @@ function cp_susty_register_sidebar() {
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
 		)
-	);	
+	);
 	register_sidebar(
 		array(
 			'id'            => 'footer',
@@ -198,6 +198,11 @@ function cp_susty_register_sidebar() {
 	);
 }
 add_action( 'widgets_init', 'cp_susty_register_sidebar' );
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Custom template tags for this theme.

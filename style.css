@@ -4,7 +4,7 @@ Theme URI: https://docs.classicpress.net
 Author: Tim Kaye, Guido and ClassicPress contributors
 Author URI: https://www.classicpress.net
 Description: The default theme for ClassicPress.
-Version: 2.0.0 BETA
+Version: 2.0.0
 Requires PHP: 8.0
 Requires CP: 2.0
 License: GNU General Public License v2 or later
@@ -803,9 +803,7 @@ button a:hover {
 .page-content::before,
 .page-content::after,
 .comment-content::before,
-.comment-content::after,
-.widget-container::before,
-.widget-container::after {
+.comment-content::after {
 	content: "";
 	display: table;
 	table-layout: fixed;
@@ -815,8 +813,7 @@ button a:hover {
 .entry-content::after,
 .post-content::after,
 .page-content::after,
-.comment-content::after,
-.widget-container::after {
+.comment-content::after {
 	clear: both;
 }
 
@@ -1049,9 +1046,9 @@ svg * {
 
 #primary-menu.menu {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
 	gap: 0.2em;
-}	
+}
 
 #primary-menu.menu li {
 	text-transform: uppercase;
@@ -1177,6 +1174,16 @@ svg * {
 	color: #fff;
 }
 
+.inner-home-hero a {
+	color: #ddd;
+}
+
+.inner-home-hero a:active,
+.inner-home-hero a:hover,
+.inner-home-hero a:focus {
+	color: #fff;
+}
+
 .inner-home-hero .home-hero-image {
 	flex-basis: 40rem;
 	flex-grow: 1;
@@ -1234,7 +1241,7 @@ h1.page-title {
 #primary {
 	display: flex;
 	justify-content: space-between;
-	gap: 2rem;	
+	gap: 2rem;
 }
 
 #main {
@@ -1291,7 +1298,7 @@ article a[target='_blank']::after {
 }
 
 .post-list h2.entry-title a {
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .entry-meta {
@@ -1302,7 +1309,7 @@ article a[target='_blank']::after {
 .entry-meta a {
 	color: rgb(179, 179, 179);
 	font-size: 0.9em;
-	font-style: italic;	
+	font-style: italic;
 }
 
 /* Single post */
@@ -1359,8 +1366,9 @@ article a[target='_blank']::after {
 	margin: 0 0 2em;
 }
 
-.widget-container:last-child {
-	margin-bottom:0;
+.widget-container:last-child,
+.widget-container p:last-child {
+	margin-bottom: 0;
 }
 
 .widget-container ul {
@@ -1368,7 +1376,7 @@ article a[target='_blank']::after {
 }
 
 .widget-container li {
-	margin:0;
+	margin: 0;
 }
 
 .widget-container input[type="search"] {
@@ -1493,7 +1501,7 @@ article a[target='_blank']::after {
 --------------------------------------------------------------*/
 @media screen and (min-width: 901px) and (max-width: 1200px) {
 	#masthead {
-		padding: 1.5em 0;	
+		padding: 1.5em 0;
 	}
 
 	.inner-masthead {
@@ -1501,13 +1509,13 @@ article a[target='_blank']::after {
 	}
 
 	.logo {
-		padding:0 0 1em;
-		text-align:center;
+		padding: 0 0 1em;
+		text-align: center;
 	}
 
 	.main-navigation {
-		display:flex;
-		justify-content:center;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -1534,7 +1542,7 @@ article a[target='_blank']::after {
 	}
 
 	#site-navigation {
-		display:none;
+		display: none;
 	}
 
 	#primary-menu.menu {
@@ -1611,6 +1619,6 @@ article a[target='_blank']::after {
 	.copyright, .policy {
 		text-align: center;
 		padding-top: 0.5em;
-		padding-bottom: 0.5em;	
+		padding-bottom: 0.5em;
 	}
 }

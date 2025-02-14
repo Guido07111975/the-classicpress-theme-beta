@@ -27,20 +27,26 @@
 			<div class="logo" role="banner">
 
 				<?php
-				// Custom logo or site title
+				// Custom logo or site title and site description
 				if ( is_front_page() ) {
 					$before_title = '<h1 class="site-title">';
 					$after_title = '</h1>';
 				} else {
 					$before_title = '<div class="site-title">';
-					$after_title = '</div>';						
+					$after_title = '</div>';			
 				}
-				if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
-				?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php the_custom_logo(); ?></a>
-				<?php
+				if ( get_theme_mod( 'custom_logo' ) ) {
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+					$custom_logo_alt = get_bloginfo('name');
+					echo '<a href="'.esc_url( home_url( '/' ) ).'"><img src="'.esc_url( $custom_logo_url ).'" alt="'.$custom_logo_alt.'"></a>';	
 				} else {
 					echo $before_title; ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a><?php echo $after_title;
+					if ( get_bloginfo('description') ) {
+					?>
+						<div class="site-description"><?php bloginfo('description'); ?></div>
+					<?php
+					}
 				}
 				?>
 
