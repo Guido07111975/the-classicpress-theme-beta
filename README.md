@@ -25,8 +25,8 @@ The ClassicPress Theme also comes with a ready-made template for Frequently Aske
 * New: footer widget area
 * Removed: hardcoded custom font (in favour of system font)
 * Removed: footer menu and static CP-specific footer content
-* File footer.php: added CSS-classes that will replace CP-specific ones in the future ('classic', 'cplegal', 'cpcopyright', 'cppolicy')
-* Users with custom footer styling should consider updating their CSS in advance
+* File footer.php: new CSS-classes that will replace CP-specific ones ('classic', 'cplegal', 'cpcopyright', 'cppolicy')
+* For users with custom footer styling: the CP-specific CSS-classes will be removed in the future
 * Fully updated stylesheet
 * Many minor changes in code
 
