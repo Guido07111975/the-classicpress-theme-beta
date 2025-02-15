@@ -19,7 +19,7 @@ get_header();
 					while ( have_posts() ) :
 						the_post();
 
-						get_template_part( 'template-parts/content', 'list' );
+						get_template_part( 'template-parts/content', 'blog' );
 
 					endwhile;
 
