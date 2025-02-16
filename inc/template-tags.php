@@ -55,11 +55,13 @@ if ( ! function_exists( 'wp_categories_tags' ) ) :
 	 * Prints the categories and tags for the current post.
 	 */
 	function wp_categories_tags() {
-		echo ' | ';
-		printf( __( 'Category: %s', 'the-classicpress-theme' ), get_the_category_list( ', ' ) );
+		if( has_category() ) :
+			/* translators: 1: list of categories. */
+			printf( __( ' | Category: %1$s', 'the-classicpress-theme' ), get_the_category_list( ', ' ) );
+		endif;
 		if( has_tag() ) :
-			echo ' | ';
-			printf( __( 'Tag: %s', 'the-classicpress-theme' ), get_the_tag_list( '', ', ', '' ) );
+			/* translators: 1: list of tags. */
+			printf( __( ' | Tag: %1$s', 'the-classicpress-theme' ), get_the_tag_list( '', ', ', '' ) );
 		endif;
 	}
 endif;
