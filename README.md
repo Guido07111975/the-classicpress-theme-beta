@@ -19,8 +19,7 @@ The homepage hero section makes it possible to display a custom header image as 
 The ClassicPress Theme also comes with a ready-made template for Frequently Asked Questions. To make use of this, create a custom post type for FAQs, register the post type as 'faq', and specify a URL for its archive (e.g. 'has_archive' => 'faqs' ). The theme will then display your FAQs using accessible disclosure widgets. Just remember to create a Custom Link to the FAQs in your menu!
 
 ## Changelog
-= Version 2.0.0
-* Major update
+= Version 1.1.0
 * New: homepage hero section (header image and widget area)
 * New: footer widget area
 * Removed: hardcoded custom font (in favour of system font)
