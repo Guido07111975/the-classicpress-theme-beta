@@ -1555,6 +1555,11 @@ article a[target='_blank']::after {
 		padding: 1em;
 	}
 
+	#primary-menu.menu .sub-menu li a {
+		padding: 1em;
+		border-radius: 6px;
+	}
+
 	.nav--toggle-sub li:hover > ul,
 	.nav--toggle-sub li:focus-within > ul {
 		display: none;
