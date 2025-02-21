@@ -25,10 +25,8 @@
 				<p><?php esc_html_e( 'Copyright', 'the-classicpress-theme' ); ?> <?php echo esc_attr( gmdate( 'Y' ) ); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></p>
 			</div>
 			<div class="cppolicy">
-				<?php
-				if ( ! empty( get_privacy_policy_url() ) ) {
-				?>
-				<p><a href="<?php echo esc_url( get_privacy_policy_url() ); ?>"><?php esc_html_e( 'Privacy Policy', 'the-classicpress-theme' ); ?></a></p>
+				<?php if ( ! empty( get_privacy_policy_url() ) ) { ?>
+					<p><a href="<?php echo esc_url( get_privacy_policy_url() ); ?>"><?php esc_html_e( 'Privacy Policy', 'the-classicpress-theme' ); ?></a></p>
 				<?php } ?>
 			</div>
 		</div>
