@@ -11,7 +11,7 @@ jobs:
         - name: VIPCS check
           uses: 10up/wpcs-action@stable
           with:
-            standard: 'WordPress-VIP-Go'
+            standard: 'WordPress'
             extra_args: '--report-json=./phpcs.json'
         - name: Update summary
           run: |
