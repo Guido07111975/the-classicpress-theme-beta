@@ -8,7 +8,7 @@
  */
 ?>
 
-	</div>
+</div>
 
 	<?php if ( is_active_sidebar( 'footer' ) ) { ?>
 	<footer id="colophon" role="complementary">
