@@ -26,8 +26,7 @@
 			</div>
 			<div class="cppolicy">
 				<?php
-				$policy_page_id = get_option( 'wp_page_for_privacy_policy' );
-				if ( !empty ( get_privacy_policy_url() ) ) {
+				if ( ! empty( get_privacy_policy_url() ) ) {
 				?>
 				<p><a href="<?php echo esc_url( get_privacy_policy_url() ); ?>"><?php esc_html_e( 'Privacy Policy', 'the-classicpress-theme' ); ?></a></p>
 				<?php } ?>
@@ -42,4 +41,3 @@
 </body>
 
 </html>
-
